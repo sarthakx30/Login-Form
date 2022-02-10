@@ -10,7 +10,7 @@ body{
     border: solid 2px #1a73e8;
     padding: 10px;
     border-radius:10px;
-    width: 25%;
+    width: 30%;
 }
 .form > div{
     padding: 10px;
@@ -24,14 +24,15 @@ div >input{
 div>label{
     position:absolute;
     top:15px;
-    left:40px;
-    padding : 0 0.625rem 0;
+    left:60px;
+    /* padding : 0 0.625rem 0; */
     color:gray;
     pointer-events: none;
     transition: 0.5s;
 }
 input:focus ~ label,input:not([value=""])~label{
-    top:-1.5px;
+    top: 1.5px;
+    left: 45px; 
     color:#1a73e8;
     background-color:white;
     height:15px;
@@ -52,4 +53,18 @@ input:focus{
     outline: none;
     border: none;
     margin: 10px;
+}
+@media (max-width:900px){
+    .main{
+        width: 50%;
+    }
+    div>label{
+        position:absolute;
+        top:15px;
+        left:30px;
+    }
+    input:focus ~ label,input:not([value=""])~label{
+        top: 1.5px;
+        left: 20px; 
+    }
 }
