@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <h2>Sign In</h2>
+        <p>Enter Your Account Details</p>
+        <form class="form">
+            <div>
+                <input type="email" required onkeyup="this.setAttribute('value',this.value);" value="">
+                <label>E-Mail</label>
+            </div>
+            <div>
+                <input type="password" required onkeyup="this.setAttribute('value',this.value);" value="">
+                <label>Password</label>
+            </div>
+            <input class="submit-btn" type="submit" value="Sign-In">
+        </form>
+    </div>
+</body>
+</html>

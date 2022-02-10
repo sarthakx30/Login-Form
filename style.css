@@ -1,0 +1,55 @@
+body{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+.main{
+    border: solid 2px #1a73e8;
+    padding: 10px;
+    border-radius:10px;
+    width: 25%;
+}
+.form > div{
+    padding: 10px;
+    position: relative;
+}
+div >input{
+    height: 25px;
+    width:80%;
+    border-radius: 5px;
+}
+div>label{
+    position:absolute;
+    top:15px;
+    left:40px;
+    padding : 0 0.625rem 0;
+    color:gray;
+    pointer-events: none;
+    transition: 0.5s;
+}
+input:focus ~ label,input:not([value=""])~label{
+    top:-1.5px;
+    color:#1a73e8;
+    background-color:white;
+    height:15px;
+    padding: 2px;
+    font-size: .85rem;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+
+.submit-btn{
+    color: aliceblue;
+    background-color: #3c86e7;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 10px;
+}
